@@ -14,37 +14,37 @@ export function HeroSection() {
           className="object-cover opacity-30"
           priority
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-[#0a0a0a] via-[#0a0a0a]/80 to-[#0a0a0a]" />
-        <div className="absolute inset-0 bg-gradient-to-r from-[#8b1a1a]/20 via-transparent to-[#d4a855]/20" />
+        <div className="absolute inset-0 bg-gradient-to-b from-[#1a1425] via-[#1a1425]/80 to-[#1a1425]" />
+        <div className="absolute inset-0 bg-gradient-to-r from-[#6b4e8d]/20 via-transparent to-[#c9a86c]/20" />
       </div>
 
       {/* Decorative elements */}
-      <div className="absolute top-40 left-10 w-32 h-32 bg-[#d4a855]/10 rounded-full blur-3xl" />
-      <div className="absolute bottom-40 right-10 w-40 h-40 bg-[#8b1a1a]/20 rounded-full blur-3xl" />
+      <div className="absolute top-40 left-10 w-32 h-32 bg-[#c9a86c]/10 rounded-full blur-3xl" />
+      <div className="absolute bottom-40 right-10 w-40 h-40 bg-[#6b4e8d]/20 rounded-full blur-3xl" />
 
       <div className="container mx-auto px-4 relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left content */}
           <div className="text-center lg:text-left">
             {/* Badge */}
-            <div className="inline-flex items-center gap-2 bg-[#d4a855]/10 border border-[#d4a855]/30 rounded-full px-4 py-2 mb-6">
-              <Star className="w-4 h-4 text-[#d4a855] fill-[#d4a855]" />
-              <span className="text-[#d4a855] text-sm font-medium">Voyant de confiance depuis + de 20 ans</span>
+            <div className="inline-flex items-center gap-2 bg-[#c9a86c]/10 border border-[#c9a86c]/30 rounded-full px-4 py-2 mb-6">
+              <Star className="w-4 h-4 text-[#c9a86c] fill-[#c9a86c]" />
+              <span className="text-[#c9a86c] text-sm font-medium">Voyant de confiance depuis + de 20 ans</span>
             </div>
 
-            <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl font-bold text-[#f5f0e6] mb-6 leading-tight">
-              <span className="text-[#d4a855]">Voyance Immédiate</span>
+            <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl font-bold text-[#f8f5f0] mb-6 leading-tight">
+              <span className="text-[#c9a86c]">Voyance Immediate</span>
               <br />
               <span className="text-3xl md:text-4xl lg:text-5xl">avec Cheikh</span>
             </h1>
 
-            <p className="text-lg md:text-xl text-[#a89f8f] mb-4 max-w-xl mx-auto lg:mx-0">
-              Médium Marocain Authentique - Voyance Orientale Sérieuse
+            <p className="text-lg md:text-xl text-[#b8a8c8] mb-4 max-w-xl mx-auto lg:mx-0">
+              Medium Marocain Authentique - Voyance Orientale Serieuse
             </p>
 
-            <p className="text-[#f5f0e6]/80 mb-8 max-w-xl mx-auto lg:mx-0">
-              Vous traversez un doute ou un blocage ? Je vous apporte des réponses claires avec sérieux et discrétion. 
-              Spécialiste du <span className="text-[#d4a855]">Mektoub</span>, de l&apos;interprétation des rêves et de la lecture du marc de café.
+            <p className="text-[#f8f5f0]/80 mb-8 max-w-xl mx-auto lg:mx-0">
+              Vous traversez un doute ou un blocage ? Je vous apporte des reponses claires avec serieux et discretion. 
+              Specialiste du <span className="text-[#c9a86c]">Mektoub</span>, travail avec les Djinns et Kitab Shams Al-Maarif.
             </p>
 
             {/* CTA Buttons */}
@@ -52,7 +52,7 @@ export function HeroSection() {
               <Button 
                 asChild
                 size="lg"
-                className="bg-gradient-to-r from-[#d4a855] to-[#b8922e] hover:from-[#e5b966] hover:to-[#d4a855] text-[#0a0a0a] font-bold text-lg px-8 py-6 shadow-lg shadow-[#d4a855]/20"
+                className="bg-gradient-to-r from-[#c9a86c] to-[#a8894d] hover:from-[#d9b87c] hover:to-[#c9a86c] text-[#1a1425] font-bold text-lg px-8 py-6 shadow-lg shadow-[#c9a86c]/20"
               >
                 <a href="tel:0782388164">
                   <Phone className="w-5 h-5 mr-2" />
@@ -63,7 +63,7 @@ export function HeroSection() {
                 asChild
                 size="lg"
                 variant="outline"
-                className="border-2 border-[#8b1a1a] text-[#f5f0e6] hover:bg-[#8b1a1a] hover:text-[#f5f0e6] font-bold text-lg px-8 py-6"
+                className="border-2 border-[#6b4e8d] text-[#f8f5f0] hover:bg-[#6b4e8d] hover:text-[#f8f5f0] font-bold text-lg px-8 py-6"
               >
                 <a href="#services">
                   Nos Services
@@ -73,16 +73,16 @@ export function HeroSection() {
 
             {/* Trust badges */}
             <div className="flex flex-wrap gap-6 justify-center lg:justify-start">
-              <div className="flex items-center gap-2 text-[#a89f8f]">
-                <Clock className="w-5 h-5 text-[#d4a855]" />
-                <span className="text-sm">Réponse Immédiate</span>
+              <div className="flex items-center gap-2 text-[#b8a8c8]">
+                <Clock className="w-5 h-5 text-[#c9a86c]" />
+                <span className="text-sm">Reponse Immediate</span>
               </div>
-              <div className="flex items-center gap-2 text-[#a89f8f]">
-                <Shield className="w-5 h-5 text-[#d4a855]" />
+              <div className="flex items-center gap-2 text-[#b8a8c8]">
+                <Shield className="w-5 h-5 text-[#c9a86c]" />
                 <span className="text-sm">100% Confidentiel</span>
               </div>
-              <div className="flex items-center gap-2 text-[#a89f8f]">
-                <Star className="w-5 h-5 text-[#d4a855]" />
+              <div className="flex items-center gap-2 text-[#b8a8c8]">
+                <Star className="w-5 h-5 text-[#c9a86c]" />
                 <span className="text-sm">+2000 Consultations</span>
               </div>
             </div>
@@ -92,7 +92,7 @@ export function HeroSection() {
           <div className="relative hidden lg:block">
             <div className="relative">
               {/* Main image */}
-              <div className="relative w-80 h-80 mx-auto rounded-full overflow-hidden border-4 border-[#d4a855] shadow-2xl shadow-[#d4a855]/30">
+              <div className="relative w-80 h-80 mx-auto rounded-full overflow-hidden border-4 border-[#c9a86c] shadow-2xl shadow-[#c9a86c]/30">
                 <Image
                   src="/images/logo.jpg"
                   alt="Cheikh Voyant"
@@ -102,7 +102,7 @@ export function HeroSection() {
               </div>
 
               {/* Floating images */}
-              <div className="absolute -top-4 -left-4 w-32 h-32 rounded-2xl overflow-hidden border-2 border-[#8b1a1a] shadow-xl">
+              <div className="absolute -top-4 -left-4 w-32 h-32 rounded-2xl overflow-hidden border-2 border-[#6b4e8d] shadow-xl">
                 <Image
                   src="/images/tarot-cards.jpg"
                   alt="Cartes de tarot"
@@ -110,7 +110,7 @@ export function HeroSection() {
                   className="object-cover"
                 />
               </div>
-              <div className="absolute -bottom-4 -right-4 w-32 h-32 rounded-2xl overflow-hidden border-2 border-[#d4a855] shadow-xl">
+              <div className="absolute -bottom-4 -right-4 w-32 h-32 rounded-2xl overflow-hidden border-2 border-[#c9a86c] shadow-xl">
                 <Image
                   src="/images/crystal-ball.jpg"
                   alt="Boule de cristal"
@@ -118,10 +118,10 @@ export function HeroSection() {
                   className="object-cover"
                 />
               </div>
-              <div className="absolute top-1/2 -right-12 w-28 h-28 rounded-2xl overflow-hidden border-2 border-[#8b1a1a] shadow-xl">
+              <div className="absolute top-1/2 -right-12 w-28 h-28 rounded-2xl overflow-hidden border-2 border-[#6b4e8d] shadow-xl">
                 <Image
-                  src="/images/coffee-reading.jpg"
-                  alt="Lecture du marc de café"
+                  src="/images/jinn-work.jpg"
+                  alt="Travail avec les Djinns"
                   fill
                   className="object-cover"
                 />
@@ -133,23 +133,23 @@ export function HeroSection() {
         {/* Domains of expertise */}
         <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-4">
           {[
-            { icon: "heart", label: "Amour", sublabel: "Retour de l'être aimé" },
-            { icon: "briefcase", label: "Travail", sublabel: "Carrière & Projets" },
+            { icon: "heart", label: "Amour", sublabel: "Retour de l'etre aime" },
+            { icon: "briefcase", label: "Travail", sublabel: "Carriere & Projets" },
             { icon: "users", label: "Famille", sublabel: "Conflits & Harmonie" },
-            { icon: "sparkles", label: "Mektoub", sublabel: "Votre Destinée" },
+            { icon: "sparkles", label: "Mektoub", sublabel: "Votre Destinee" },
           ].map((item) => (
             <div 
               key={item.label}
-              className="bg-[#141414]/80 backdrop-blur-sm border border-[#d4a855]/20 rounded-xl p-4 text-center hover:border-[#d4a855]/50 transition-colors group"
+              className="bg-[#251e35]/80 backdrop-blur-sm border border-[#c9a86c]/20 rounded-xl p-4 text-center hover:border-[#c9a86c]/50 transition-colors group"
             >
-              <div className="w-12 h-12 mx-auto mb-3 rounded-full bg-gradient-to-br from-[#8b1a1a] to-[#5a1010] flex items-center justify-center group-hover:from-[#d4a855] group-hover:to-[#b8922e] transition-all">
-                {item.icon === "heart" && <HeartIcon className="w-6 h-6 text-[#f5f0e6]" />}
-                {item.icon === "briefcase" && <BriefcaseIcon className="w-6 h-6 text-[#f5f0e6]" />}
-                {item.icon === "users" && <UsersIcon className="w-6 h-6 text-[#f5f0e6]" />}
-                {item.icon === "sparkles" && <SparklesIcon className="w-6 h-6 text-[#f5f0e6]" />}
+              <div className="w-12 h-12 mx-auto mb-3 rounded-full bg-gradient-to-br from-[#6b4e8d] to-[#4a3563] flex items-center justify-center group-hover:from-[#c9a86c] group-hover:to-[#a8894d] transition-all">
+                {item.icon === "heart" && <HeartIcon className="w-6 h-6 text-[#f8f5f0]" />}
+                {item.icon === "briefcase" && <BriefcaseIcon className="w-6 h-6 text-[#f8f5f0]" />}
+                {item.icon === "users" && <UsersIcon className="w-6 h-6 text-[#f8f5f0]" />}
+                {item.icon === "sparkles" && <SparklesIcon className="w-6 h-6 text-[#f8f5f0]" />}
               </div>
-              <h3 className="font-serif text-lg text-[#d4a855] font-semibold">{item.label}</h3>
-              <p className="text-sm text-[#a89f8f]">{item.sublabel}</p>
+              <h3 className="font-serif text-lg text-[#c9a86c] font-semibold">{item.label}</h3>
+              <p className="text-sm text-[#b8a8c8]">{item.sublabel}</p>
             </div>
           ))}
         </div>
