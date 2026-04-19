@@ -1,127 +1,181 @@
-import { Heart, Briefcase, Users, Moon, Coffee, Star, Sparkles, BookOpen } from "lucide-react"
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-
-const services = [
-  {
-    icon: Heart,
-    title: "Amour & Relations",
-    description: "Est-ce qu'il va revenir ? Comment retrouver l'harmonie dans votre couple ? Je vous guide vers les réponses.",
-    keywords: ["Retour de l'être aimé", "Problèmes de couple", "Rencontres amoureuses"]
-  },
-  {
-    icon: Star,
-    title: "Voyance Mektoub",
-    description: "Comment connaître mon Mektoub ? Découvrez ce que le destin vous réserve selon la tradition orientale.",
-    keywords: ["Destin", "Mektoub", "Avenir"]
-  },
-  {
-    icon: Moon,
-    title: "Interprétation des Rêves",
-    description: "Quelle est la signification de mon rêve ? Interprétation des rêves selon la tradition islamique et orientale.",
-    keywords: ["Rêves en Islam", "Symboles oniriques", "Messages"]
-  },
-  {
-    icon: Briefcase,
-    title: "Travail & Carrière",
-    description: "Vais-je trouver du travail cette année ? Guidance professionnelle et orientation de carrière.",
-    keywords: ["Emploi", "Réussite professionnelle", "Projets"]
-  },
-  {
-    icon: Users,
-    title: "Famille & Conflits",
-    description: "Résolution des conflits familiaux, réconciliation et harmonie au sein du foyer.",
-    keywords: ["Conflits familiaux", "Réconciliation", "Harmonie"]
-  },
-  {
-    icon: Sparkles,
-    title: "Astrologie Arabe",
-    description: "Découvrez votre thème astral selon l'astrologie arabe traditionnelle et ses influences sur votre vie.",
-    keywords: ["Astrologie orientale", "Thème astral", "Influences"]
-  },
-  {
-    icon: Coffee,
-    title: "Lecture du Marc de Café",
-    description: "Art divinatoire ancestral, la lecture du marc de café révèle les messages cachés de votre avenir.",
-    keywords: ["Tasséographie", "Tradition orientale", "Divination"]
-  },
-  {
-    icon: BookOpen,
-    title: "Déblocage & Protection",
-    description: "Libération des blocages énergétiques et protection spirituelle selon les traditions maghrébines.",
-    keywords: ["Protection", "Déblocage", "Énergie positive"]
-  }
-]
+import Image from "next/image"
+import { Phone, Calendar, Clock, MessageCircle, CheckCircle } from "lucide-react"
+import { Button } from "@/components/ui/button"
 
 export function ServicesSection() {
+  const consultationTypes = [
+    {
+      icon: Phone,
+      title: "Consultation Téléphonique Immédiate",
+      description: "Appelez maintenant et obtenez des réponses immédiates à vos questions. Disponible 7j/7.",
+      features: ["Réponse immédiate", "Sans rendez-vous", "Discrétion assurée"],
+      cta: "Appeler Maintenant",
+      href: "tel:0782388164",
+      highlight: true,
+    },
+    {
+      icon: Calendar,
+      title: "Consultation sur Rendez-vous",
+      description: "Planifiez votre consultation à l'heure qui vous convient pour une séance approfondie.",
+      features: ["Horaire flexible", "Préparation personnalisée", "Durée adaptée"],
+      cta: "Prendre RDV",
+      href: "#contact",
+      highlight: false,
+    },
+    {
+      icon: MessageCircle,
+      title: "Consultation WhatsApp",
+      description: "Consultation via WhatsApp pour une expérience plus personnelle et pratique.",
+      features: ["Face à face virtuel", "Lecture en direct", "Accessible partout"],
+      cta: "WhatsApp",
+      href: "https://wa.me/33782388164",
+      highlight: false,
+    },
+  ]
+
+  const services = [
+    {
+      image: "/images/tarot-cards.jpg",
+      title: "Voyance Mektoub",
+      description: "Découvrez votre destinée écrite. Le Mektoub révèle le chemin que la vie a tracé pour vous.",
+    },
+    {
+      image: "/images/crystal-ball.jpg",
+      title: "Interprétation des Rêves",
+      description: "Vos rêves ont une signification profonde en Islam. Je vous aide à comprendre leurs messages.",
+    },
+    {
+      image: "/images/coffee-reading.jpg",
+      title: "Lecture du Marc de Café",
+      description: "Art ancestral oriental, la lecture du marc de café révèle votre avenir proche.",
+    },
+    {
+      image: "/images/astrology.jpg",
+      title: "Astrologie Arabe",
+      description: "L'astrologie arabe millénaire pour comprendre votre personnalité et votre chemin de vie.",
+    },
+  ]
+
   return (
-    <section id="services" className="py-20 bg-background relative">
-      {/* Decorative background */}
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(212,168,85,0.05)_0%,transparent_70%)]" />
+    <section id="services" className="py-20 relative overflow-hidden">
+      {/* Background */}
+      <div className="absolute inset-0 bg-gradient-to-b from-[#0a0a0a] via-[#141414] to-[#0a0a0a]" />
+      <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#d4a855]/50 to-transparent" />
       
+      {/* Decorative */}
+      <div className="absolute top-20 right-0 w-64 h-64 bg-[#8b1a1a]/10 rounded-full blur-3xl" />
+      <div className="absolute bottom-20 left-0 w-64 h-64 bg-[#d4a855]/10 rounded-full blur-3xl" />
+
       <div className="container mx-auto px-4 relative z-10">
+        {/* Section header */}
         <div className="text-center mb-16">
-          <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-4">
-            Mes <span className="text-primary">Services</span>
+          <span className="inline-block text-[#8b1a1a] font-medium mb-2 uppercase tracking-wider text-sm">Types de Consultation</span>
+          <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl font-bold text-[#f5f0e6] mb-4">
+            Comment Me <span className="text-[#d4a855]">Consulter</span> ?
           </h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Voyance orientale sérieuse - Médium maghrébin de confiance à Paris
+          <p className="text-[#a89f8f] max-w-2xl mx-auto">
+            Choisissez le mode de consultation qui vous convient le mieux. Par téléphone pour une réponse immédiate ou sur rendez-vous pour une séance approfondie.
           </p>
-          <div className="w-24 h-1 bg-primary mx-auto mt-6" />
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-          {services.map((service, index) => (
-            <Card 
-              key={index} 
-              className="bg-card border-border hover:border-primary/50 transition-all duration-300 hover:shadow-lg hover:shadow-primary/5 group"
+        {/* Consultation types */}
+        <div className="grid md:grid-cols-3 gap-6 mb-20">
+          {consultationTypes.map((type) => (
+            <div 
+              key={type.title}
+              className={`relative rounded-2xl p-6 transition-all duration-300 hover:-translate-y-2 ${
+                type.highlight 
+                  ? "bg-gradient-to-br from-[#8b1a1a] to-[#5a1010] border-2 border-[#d4a855]" 
+                  : "bg-[#141414] border border-[#2d2418] hover:border-[#d4a855]/50"
+              }`}
             >
-              <CardHeader className="text-center pb-4">
-                <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-primary/20 transition-colors">
-                  <service.icon className="w-8 h-8 text-primary" />
+              {type.highlight && (
+                <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-[#d4a855] text-[#0a0a0a] text-xs font-bold px-3 py-1 rounded-full">
+                  RECOMMANDÉ
                 </div>
-                <CardTitle className="font-serif text-xl text-foreground group-hover:text-primary transition-colors">
-                  {service.title}
-                </CardTitle>
-              </CardHeader>
-              <CardContent className="text-center">
-                <CardDescription className="text-muted-foreground leading-relaxed mb-4">
-                  {service.description}
-                </CardDescription>
-                <div className="flex flex-wrap justify-center gap-2">
-                  {service.keywords.map((keyword, idx) => (
-                    <span 
-                      key={idx}
-                      className="text-xs px-2 py-1 bg-secondary/50 text-muted-foreground rounded-full"
-                    >
-                      {keyword}
-                    </span>
-                  ))}
-                </div>
-              </CardContent>
-            </Card>
+              )}
+              
+              <div className={`w-14 h-14 rounded-xl flex items-center justify-center mb-4 ${
+                type.highlight ? "bg-[#d4a855]/20" : "bg-[#8b1a1a]/20"
+              }`}>
+                <type.icon className={`w-7 h-7 ${type.highlight ? "text-[#d4a855]" : "text-[#8b1a1a]"}`} />
+              </div>
+              
+              <h3 className="font-serif text-xl font-bold text-[#f5f0e6] mb-2">{type.title}</h3>
+              <p className="text-[#a89f8f] text-sm mb-4">{type.description}</p>
+              
+              <ul className="space-y-2 mb-6">
+                {type.features.map((feature) => (
+                  <li key={feature} className="flex items-center gap-2 text-sm text-[#f5f0e6]/80">
+                    <CheckCircle className="w-4 h-4 text-[#d4a855]" />
+                    {feature}
+                  </li>
+                ))}
+              </ul>
+              
+              <Button 
+                asChild
+                className={`w-full font-bold ${
+                  type.highlight 
+                    ? "bg-[#d4a855] hover:bg-[#e5b966] text-[#0a0a0a]" 
+                    : "bg-[#8b1a1a] hover:bg-[#a02020] text-[#f5f0e6]"
+                }`}
+              >
+                <a href={type.href}>{type.cta}</a>
+              </Button>
+            </div>
+          ))}
+        </div>
+
+        {/* Services header */}
+        <div className="text-center mb-12">
+          <span className="inline-block text-[#8b1a1a] font-medium mb-2 uppercase tracking-wider text-sm">Mes Spécialités</span>
+          <h2 className="font-serif text-3xl md:text-4xl font-bold text-[#f5f0e6] mb-4">
+            Domaines de <span className="text-[#d4a855]">Voyance</span>
+          </h2>
+        </div>
+
+        {/* Services grid */}
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          {services.map((service) => (
+            <div 
+              key={service.title}
+              className="group relative rounded-2xl overflow-hidden bg-[#141414] border border-[#2d2418] hover:border-[#d4a855]/50 transition-all duration-300"
+            >
+              <div className="relative h-48 overflow-hidden">
+                <Image
+                  src={service.image}
+                  alt={service.title}
+                  fill
+                  className="object-cover group-hover:scale-110 transition-transform duration-500"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-[#141414] to-transparent" />
+              </div>
+              <div className="p-5">
+                <h3 className="font-serif text-lg font-bold text-[#d4a855] mb-2">{service.title}</h3>
+                <p className="text-[#a89f8f] text-sm">{service.description}</p>
+              </div>
+            </div>
           ))}
         </div>
 
         {/* Questions section */}
-        <div className="mt-16 bg-card rounded-2xl p-8 md:p-12 border border-primary/20">
-          <h3 className="font-serif text-2xl md:text-3xl font-bold text-foreground text-center mb-8">
-            Questions fréquentes que vous vous posez
+        <div className="mt-16 bg-gradient-to-r from-[#2d1810] via-[#141414] to-[#2d1810] rounded-2xl p-8 border border-[#d4a855]/20">
+          <h3 className="font-serif text-2xl font-bold text-[#f5f0e6] text-center mb-8">
+            Questions Fréquentes de Mes Consultants
           </h3>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-3xl mx-auto">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
             {[
               "Est-ce qu'il va revenir ?",
               "Comment connaître mon Mektoub ?",
               "Quelle est la signification de mon rêve ?",
               "Vais-je trouver du travail cette année ?",
-              "Comment retrouver l'harmonie familiale ?",
-              "Que me réserve l'avenir ?"
-            ].map((question, index) => (
+            ].map((question) => (
               <div 
-                key={index}
-                className="flex items-center gap-3 p-4 bg-background rounded-lg border border-border"
+                key={question}
+                className="bg-[#0a0a0a]/50 rounded-xl p-4 text-center border border-[#8b1a1a]/30 hover:border-[#d4a855]/50 transition-colors"
               >
-                <div className="w-2 h-2 bg-primary rounded-full flex-shrink-0" />
-                <p className="text-foreground italic font-serif">{`"${question}"`}</p>
+                <p className="text-[#f5f0e6] font-medium italic">&quot;{question}&quot;</p>
               </div>
             ))}
           </div>
