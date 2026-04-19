@@ -45,14 +45,14 @@ export function ServicesSection() {
       description: "Vos rêves ont une signification profonde en Islam. Je vous aide à comprendre leurs messages.",
     },
     {
-      image: "/images/coffee-reading.jpg",
-      title: "Lecture du Marc de Café",
-      description: "Art ancestral oriental, la lecture du marc de café révèle votre avenir proche.",
+      image: "/images/jinn-work.jpg",
+      title: "Travail avec les Djinns",
+      description: "Invocation et communication avec les esprits pour résoudre vos problèmes les plus complexes.",
     },
     {
-      image: "/images/astrology.jpg",
-      title: "Astrologie Arabe",
-      description: "L'astrologie arabe millénaire pour comprendre votre personnalité et votre chemin de vie.",
+      image: "/images/shams-almaarif.jpg",
+      title: "Kitab Shams Al-Maarif",
+      description: "Secrets ancestraux du livre sacré Shams Al-Maarif Al-Kubra pour une guidance spirituelle profonde.",
     },
   ]
 
@@ -168,8 +168,8 @@ export function ServicesSection() {
             {[
               "Est-ce qu'il va revenir ?",
               "Comment connaître mon Mektoub ?",
-              "Quelle est la signification de mon rêve ?",
-              "Vais-je trouver du travail cette année ?",
+              "Comment débloquer ma chance ?",
+              "Comment savoir si j'ai le mauvais œil ?",
             ].map((question) => (
               <div 
                 key={question}

@@ -119,10 +119,10 @@ export function ContactSection() {
               <Image src="/images/crystal-ball.jpg" alt="Boule de cristal" fill className="object-cover" />
             </div>
             <div className="relative h-24 rounded-xl overflow-hidden border border-[#2d2418]">
-              <Image src="/images/coffee-reading.jpg" alt="Marc de café" fill className="object-cover" />
+              <Image src="/images/jinn-work.jpg" alt="Travail avec les Djinns" fill className="object-cover" />
             </div>
             <div className="relative h-24 rounded-xl overflow-hidden border border-[#2d2418]">
-              <Image src="/images/astrology.jpg" alt="Astrologie" fill className="object-cover" />
+              <Image src="/images/shams-almaarif.jpg" alt="Shams Al-Maarif" fill className="object-cover" />
             </div>
           </div>
 
