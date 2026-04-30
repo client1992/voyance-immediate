@@ -100,7 +100,7 @@ export function AboutSection() {
               size="lg"
               className="bg-gradient-to-r from-[#c9a86c] to-[#a8894d] hover:from-[#d9b87c] hover:to-[#c9a86c] text-[#1a1425] font-bold"
             >
-              <a href="tel:0782388164">
+              <a href="tel:0033782388164">
                 <Phone className="w-5 h-5 mr-2" />
                 Me Consulter
               </a>

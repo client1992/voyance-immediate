@@ -23,10 +23,10 @@ export function Header() {
         <div className="container mx-auto px-4 flex items-center justify-center gap-2">
           <Phone className="w-4 h-4 text-[#c9a86c] animate-pulse" />
           <a 
-            href="tel:0782388164" 
+            href="tel:0033782388164" 
             className="text-[#f8f5f0] font-bold tracking-wider hover:text-[#c9a86c] transition-colors"
           >
-            Appelez maintenant : 07 82 38 81 64
+            Appelez maintenant : 0033 7 82 38 81 64
           </a>
           <span className="hidden sm:inline text-[#c9a86c] mx-2">|</span>
           <span className="hidden sm:inline text-[#f8f5f0]/80 text-sm">Consultation Immediate</span>

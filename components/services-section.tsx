@@ -10,7 +10,7 @@ export function ServicesSection() {
       description: "Appelez maintenant et obtenez des reponses immediates a vos questions. Disponible 7j/7.",
       features: ["Reponse immediate", "Sans rendez-vous", "Discretion assuree"],
       cta: "Appeler Maintenant",
-      href: "tel:0782388164",
+      href: "tel:0033782388164",
       highlight: true,
     },
     {

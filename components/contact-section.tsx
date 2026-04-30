@@ -47,7 +47,7 @@ export function ContactSection() {
               {/* Phone number - prominent display */}
               <div className="text-center mb-10">
                 <a 
-                  href="tel:0782388164"
+                  href="tel:0033782388164"
                   className="inline-block text-4xl md:text-5xl lg:text-6xl font-bold text-[#c9a86c] hover:text-[#d9b87c] transition-colors font-serif tracking-wider"
                 >
                   07 82 38 81 64
@@ -61,7 +61,7 @@ export function ContactSection() {
                   className="bg-gradient-to-r from-[#c9a86c] to-[#a8894d] hover:from-[#d9b87c] hover:to-[#c9a86c] text-[#1a1425] font-bold text-lg px-10 py-7"
                   asChild
                 >
-                  <a href="tel:0782388164" className="flex items-center gap-3">
+                  <a href="tel:0033782388164" className="flex items-center gap-3">
                     <Phone className="w-6 h-6" />
                     Appeler Maintenant
                   </a>
