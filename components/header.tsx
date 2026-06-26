@@ -52,10 +52,8 @@ export function Header() {
             </div>
           </Link>
 
-          <div className="flex items-center gap-4">
-            <div className="hidden md:block">
-              <LanguageSwitcher />
-            </div>
+          <div className="flex items-center gap-2">
+            <LanguageSwitcher />
             <nav className="hidden md:flex items-center gap-8">
               {navLinks.map((link) => (
                 <a
