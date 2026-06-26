@@ -1,7 +1,13 @@
+"use client"
+
 import { Phone, MapPin, MessageCircle } from "lucide-react"
 import Image from "next/image"
+import { useTranslation } from "@/lib/use-translation"
 
 export function Footer() {
+  const { t, tArray } = useTranslation()
+  const servicesList = tArray("footer.servicesList") as string[]
+  const seoKeywords = tArray("footer.seoKeywords") as string[]
   return (
     <footer className="bg-[#1a1425] border-t border-[#3d2e5a]">
       <div className="container mx-auto px-4 py-12">
@@ -22,28 +28,21 @@ export function Footer() {
               </span>
             </div>
             <p className="text-sm text-[#b8a8c8] leading-relaxed">
-              Cheikh - Medium Marocain de confiance. 
-              Plus de 20 ans d&apos;experience dans la voyance orientale.
-              Consultations a Paris et a distance.
+              {t("footer.description")}
             </p>
           </div>
 
-          {/* Services */}
           <div className="text-center">
-            <h4 className="font-serif font-semibold text-[#c9a86c] mb-4">Services</h4>
+            <h4 className="font-serif font-semibold text-[#c9a86c] mb-4">{t("footer.servicesTitle")}</h4>
             <ul className="space-y-2 text-sm text-[#b8a8c8]">
-              <li className="hover:text-[#c9a86c] transition-colors cursor-pointer">Voyance Mektoub</li>
-              <li className="hover:text-[#c9a86c] transition-colors cursor-pointer">Travail avec les Djinns</li>
-              <li className="hover:text-[#c9a86c] transition-colors cursor-pointer">Kitab Shams Al-Maarif</li>
-              <li className="hover:text-[#c9a86c] transition-colors cursor-pointer">Retour de l&apos;Etre Aime</li>
-              <li className="hover:text-[#c9a86c] transition-colors cursor-pointer">Deblocage de Chance</li>
-              <li className="hover:text-[#c9a86c] transition-colors cursor-pointer">Protection Mauvais Oeil</li>
+              {servicesList.map((service, i) => (
+                <li key={i} className="hover:text-[#c9a86c] transition-colors cursor-pointer">{service}</li>
+              ))}
             </ul>
           </div>
 
-          {/* Contact */}
           <div className="text-center md:text-right">
-            <h4 className="font-serif font-semibold text-[#c9a86c] mb-4">Contact</h4>
+            <h4 className="font-serif font-semibold text-[#c9a86c] mb-4">{t("footer.contactTitle")}</h4>
             <div className="space-y-3">
               <a 
                 href="tel:0033782388164" 
@@ -63,28 +62,17 @@ export function Footer() {
               </a>
               <div className="flex items-center justify-center md:justify-end gap-2 text-[#b8a8c8]">
                 <MapPin className="w-4 h-4 text-[#c9a86c]" />
-                <span className="text-sm">Paris, France</span>
+                <span className="text-sm">{t("footer.location")}</span>
               </div>
             </div>
           </div>
         </div>
 
-        {/* Keywords for SEO */}
         <div className="mt-10 pt-6 border-t border-[#3d2e5a]">
           <div className="flex flex-wrap justify-center gap-3 text-xs text-[#b8a8c8]/60">
-            <span>Voyant Paris</span>
-            <span className="text-[#c9a86c]/40">|</span>
-            <span>Cabinet de Voyance</span>
-            <span className="text-[#c9a86c]/40">|</span>
-            <span>Medium Maghrebin</span>
-            <span className="text-[#c9a86c]/40">|</span>
-            <span>Voyance Marocaine</span>
-            <span className="text-[#c9a86c]/40">|</span>
-            <span>Voyance Mektoub</span>
-            <span className="text-[#c9a86c]/40">|</span>
-            <span>Djinns</span>
-            <span className="text-[#c9a86c]/40">|</span>
-            <span>Shams Al-Maarif</span>
+            {seoKeywords.map((kw, i) => (
+              <span key={i}>{kw}{i < seoKeywords.length - 1 ? <span className="text-[#c9a86c]/40 mx-3">|</span> : null}</span>
+            ))}
           </div>
         </div>
 
@@ -92,10 +80,10 @@ export function Footer() {
         <div className="mt-6 pt-6 border-t border-[#3d2e5a]">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-xs text-[#b8a8c8]">
-              &copy; {new Date().getFullYear()} Voyance Immediate - Cheikh Medium Marocain. Tous droits reserves.
+              &copy; {new Date().getFullYear()} {t("footer.copyright")}
             </p>
             <p className="text-xs text-[#b8a8c8]">
-              Disponible 7j/7 de 9h a 21h
+              {t("footer.availability")}
             </p>
           </div>
         </div>

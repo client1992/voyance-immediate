@@ -1,0 +1,166 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "consultations": "Consultations",
+    "reviews": "Avis Clients",
+    "contact": "Contact",
+    "call": "Appeler",
+    "callNow": "Appeler Maintenant"
+  },
+  "topbar": {
+    "call": "Appelez maintenant : 0033 7 82 38 81 64",
+    "immediate": "Consultation Immediate"
+  },
+  "hero": {
+    "badge": "Voyant de confiance depuis + de 20 ans",
+    "title1": "Voyance Immediate",
+    "title2": "avec Cheikh",
+    "subtitle": "Medium Marocain Authentique - Voyance Orientale Sérieuse",
+    "description": "Vous traversez un doute ou un blocage ? Je vous apporte des réponses claires avec sérieux et discrétion. Spécialiste du Mektoub, travail avec les Djinns et Kitab Shams Al-Maarif.",
+    "cta": "07 82 38 81 64",
+    "cta2": "Nos Services",
+    "trustItems": ["Réponse Immédiate", "100% Confidentiel", "+2000 Consultations"],
+    "domains": [
+      { "label": "Amour", "sublabel": "Retour de l'être aimé" },
+      { "label": "Travail", "sublabel": "Carrière & Projets" },
+      { "label": "Famille", "sublabel": "Conflits & Harmonie" },
+      { "label": "Mektoub", "sublabel": "Votre Destinée" }
+    ]
+  },
+  "services": {
+    "badge": "Types de Consultation",
+    "title": "Comment Me Consulter ?",
+    "subtitle": "Choisissez le mode de consultation qui vous convient le mieux. Par téléphone pour une réponse immédiate ou sur rendez-vous pour une séance approfondie.",
+    "recommended": "RECOMMANDÉ",
+    "types": [
+      {
+        "title": "Consultation Téléphonique Immédiate",
+        "description": "Appelez maintenant et obtenez des réponses immédiates à vos questions. Disponible 7j/7.",
+        "features": ["Réponse immédiate", "Sans rendez-vous", "Discrétion assurée"],
+        "cta": "Appeler Maintenant",
+        "highlight": true
+      },
+      {
+        "title": "Consultation sur Rendez-vous",
+        "description": "Planifiez votre consultation à l'heure qui vous convient pour une séance approfondie.",
+        "features": ["Horaire flexible", "Préparation personnalisée", "Durée adaptée"],
+        "cta": "Prendre RDV",
+        "highlight": false
+      },
+      {
+        "title": "Consultation WhatsApp",
+        "description": "Consultation via WhatsApp pour une expérience plus personnelle et pratique.",
+        "features": ["Face à face virtuel", "Lecture en direct", "Accessible partout"],
+        "cta": "WhatsApp",
+        "highlight": false
+      }
+    ],
+    "specialtiesBadge": "Mes Spécialités",
+    "specialtiesTitle": "Domaines de Voyance",
+    "services": [
+      {
+        "title": "Voyance Mektoub",
+        "description": "Découvrez votre destinée écrite. Le Mektoub révèle le chemin que la vie a tracé pour vous."
+      },
+      {
+        "title": "Retour de l'Être Aimé",
+        "description": "Spécialiste du retour affectif. Je vous aide à retrouver l'amour et l'harmonie dans votre couple."
+      },
+      {
+        "title": "Travail avec les Djinns",
+        "description": "Invocation et communication avec les esprits pour résoudre vos problèmes les plus complexes."
+      },
+      {
+        "title": "Kitab Shams Al-Maarif",
+        "description": "Secrets ancestraux du livre sacré Shams Al-Maarif Al-Kubra pour une guidance spirituelle profonde."
+      }
+    ],
+    "faqTitle": "Questions Fréquentes de Mes Consultants",
+    "faqQuestions": [
+      "Est-ce qu'il va revenir ?",
+      "Comment connaître mon Mektoub ?",
+      "Comment débloquer ma chance ?",
+      "Comment savoir si j'ai le mauvais œil ?"
+    ]
+  },
+  "about": {
+    "badge": "À Propos",
+    "title": "Qui est Cheikh ?",
+    "name": "Cheikh",
+    "subtitle": "Médium Marocain - Voyance Orientale",
+    "expYears": "+20",
+    "expLabel": "ans d'expérience",
+    "paragraph1": "Je suis <span class=\"text-[#c9a86c] font-semibold\">Cheikh</span>, médium et voyant d'origine marocaine, originaire de la région du <span class=\"text-[#c9a86c]\">Souss</span>, dans le sud du Maroc. Fort de plus de <span class=\"text-[#c9a86c] font-semibold\">20 ans d'expérience</span> dans les arts divinatoires, je mets mon don au service de ceux qui cherchent des réponses à leurs questions les plus profondes.",
+    "paragraph2": "Installé à <span class=\"text-[#c9a86c]\">Paris</span>, je propose des consultations aussi bien en personne qu'à distance par téléphone. Mon approche est basée sur l'écoute, le respect et la discrétion absolue. Chaque consultation est unique, car chaque personne mérite une attention particulière.",
+    "features": [
+      { "title": "+20 ans", "label": "d'expérience" },
+      { "title": "Paris", "label": "et à distance" },
+      { "title": "Discrétion", "label": "totale garantie" },
+      { "title": "Voyance", "label": "authentique" }
+    ],
+    "cta": "Me Consulter"
+  },
+  "testimonials": {
+    "badge": "Ils Me Font Confiance",
+    "title": "Avis de Mes <span class=\"text-[#c9a86c]\">Clients</span>",
+    "subtitle": "Des consultations sincères, sans jugement - Plus de 2000 personnes accompagnées dans le monde entier",
+    "verifiedReviews": "avis vérifiés - France, Espagne, Italie, Suisse, Koweït, Qatar, Arabie Saoudite",
+    "prevLabel": "Avis précédents",
+    "nextLabel": "Avis suivants",
+    "pageLabel": "Page",
+    "trustBadges": [
+      { "value": "+2000", "label": "Consultations" },
+      { "value": "98%", "label": "Satisfaction" },
+      { "value": "+20", "label": "Ans d'Expérience" },
+      { "value": "7j/7", "label": "Disponibilité" }
+    ]
+  },
+  "contact": {
+    "badge": "Contact",
+    "title": "<span class=\"text-[#c9a86c]\">Contactez</span>-moi",
+    "subtitle": "Consultation immédiate par téléphone ou sur rendez-vous - Je vous réponds personnellement",
+    "callTitle": "Appelez-moi maintenant",
+    "callSubtitle": "Je vous réponds personnellement",
+    "callNow": "Appeler Maintenant",
+    "infoItems": [
+      { "icon": "Clock", "title": "Disponibilité", "description": "7j/7 - 9h à 21h" },
+      { "icon": "Shield", "title": "Discrétion", "description": "100% Confidentiel" },
+      { "icon": "MapPin", "title": "Localisation", "description": "Paris & à distance" }
+    ],
+    "disclaimer": "Consultation <span class=\"text-[#c9a86c] font-semibold\">discrète</span> et <span class=\"text-[#c9a86c] font-semibold\">confidentielle</span>",
+    "disclaimerSub": "Réponses sincères, sans jugement - Plus de 20 ans d'expérience"
+  },
+  "footer": {
+    "brand": "Voyance Immediate",
+    "brandHighlight": "Immediate",
+    "description": "Cheikh - Médium Marocain de confiance. Plus de 20 ans d'expérience dans la voyance orientale. Consultations à Paris et à distance.",
+    "servicesTitle": "Services",
+    "servicesList": [
+      "Voyance Mektoub",
+      "Travail avec les Djinns",
+      "Kitab Shams Al-Maarif",
+      "Retour de l'Être Aimé",
+      "Déblocage de Chance",
+      "Protection Mauvais Œil"
+    ],
+    "contactTitle": "Contact",
+    "location": "Paris, France",
+    "copyright": "Voyance Immediate - Cheikh Médium Marocain. Tous droits réservés.",
+    "availability": "Disponible 7j/7 de 9h à 21h",
+    "seoKeywords": [
+      "Voyant Paris",
+      "Cabinet de Voyance",
+      "Médium Maghrébin",
+      "Voyance Marocaine",
+      "Voyance Mektoub",
+      "Djinns",
+      "Shams Al-Maarif"
+    ]
+  },
+  "language": {
+    "fr": "Français",
+    "en": "English",
+    "es": "Español",
+    "ar": "العربية"
+  }
+}

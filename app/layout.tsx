@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import { Cormorant_Garamond, Lato } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
+import { LanguageProvider } from '@/lib/language-context'
 import './globals.css'
 
 const cormorant = Cormorant_Garamond({ 
@@ -66,8 +67,10 @@ export default function RootLayout({
   return (
     <html lang="fr" className="bg-background">
       <body className={`${cormorant.variable} ${lato.variable} font-sans antialiased`}>
-        {children}
-        {process.env.NODE_ENV === 'production' && <Analytics />}
+        <LanguageProvider>
+          {children}
+          {process.env.NODE_ENV === 'production' && <Analytics />}
+        </LanguageProvider>
       </body>
     </html>
   )

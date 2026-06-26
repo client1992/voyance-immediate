@@ -1,8 +1,13 @@
+"use client"
+
 import Image from "next/image"
 import { Phone, Clock, MapPin, MessageCircle, Shield } from "lucide-react"
 import { Button } from "@/components/ui/button"
+import { useTranslation } from "@/lib/use-translation"
 
 export function ContactSection() {
+  const { t, tArray } = useTranslation()
+  const infoItems = tArray("contact.infoItems") as { icon: string; title: string; description: string }[]
   return (
     <section id="contact" className="py-20 relative overflow-hidden">
       {/* Background */}
@@ -15,12 +20,10 @@ export function ContactSection() {
 
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center mb-16">
-          <span className="inline-block text-[#6b4e8d] font-medium mb-2 uppercase tracking-wider text-sm">Contact</span>
-          <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl font-bold text-[#f8f5f0] mb-4">
-            <span className="text-[#c9a86c]">Contactez</span>-moi
-          </h2>
+          <span className="inline-block text-[#6b4e8d] font-medium mb-2 uppercase tracking-wider text-sm">{t("contact.badge")}</span>
+          <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl font-bold text-[#f8f5f0] mb-4" dangerouslySetInnerHTML={{ __html: t("contact.title") }} />
           <p className="text-[#b8a8c8] max-w-2xl mx-auto">
-            Consultation immediate par telephone ou sur rendez-vous - Je vous reponds personnellement
+            {t("contact.subtitle")}
           </p>
         </div>
 
@@ -37,10 +40,10 @@ export function ContactSection() {
                   <Phone className="w-10 h-10 text-[#c9a86c]" />
                 </div>
                 <h3 className="font-serif text-2xl md:text-3xl font-bold text-[#f8f5f0] mb-2">
-                  Appelez-moi maintenant
+                  {t("contact.callTitle")}
                 </h3>
                 <p className="text-[#b8a8c8]">
-                  Je vous reponds personnellement
+                  {t("contact.callSubtitle")}
                 </p>
               </div>
 
@@ -63,7 +66,7 @@ export function ContactSection() {
                 >
                   <a href="tel:0033782388164" className="flex items-center gap-3">
                     <Phone className="w-6 h-6" />
-                    Appeler Maintenant
+                    {t("contact.callNow")}
                   </a>
                 </Button>
                 <Button 
@@ -83,29 +86,19 @@ export function ContactSection() {
                 </Button>
               </div>
 
-              {/* Info grid */}
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6 pt-8 border-t border-[#3d2e5a]">
-                <div className="text-center">
-                  <div className="w-12 h-12 bg-[#6b4e8d]/20 rounded-xl flex items-center justify-center mx-auto mb-3">
-                    <Clock className="w-6 h-6 text-[#c9a86c]" />
-                  </div>
-                  <h4 className="font-semibold text-[#f8f5f0] mb-1">Disponibilite</h4>
-                  <p className="text-sm text-[#b8a8c8]">7j/7 - 9h a 21h</p>
-                </div>
-                <div className="text-center">
-                  <div className="w-12 h-12 bg-[#6b4e8d]/20 rounded-xl flex items-center justify-center mx-auto mb-3">
-                    <Shield className="w-6 h-6 text-[#c9a86c]" />
-                  </div>
-                  <h4 className="font-semibold text-[#f8f5f0] mb-1">Discretion</h4>
-                  <p className="text-sm text-[#b8a8c8]">100% Confidentiel</p>
-                </div>
-                <div className="text-center">
-                  <div className="w-12 h-12 bg-[#6b4e8d]/20 rounded-xl flex items-center justify-center mx-auto mb-3">
-                    <MapPin className="w-6 h-6 text-[#c9a86c]" />
-                  </div>
-                  <h4 className="font-semibold text-[#f8f5f0] mb-1">Localisation</h4>
-                  <p className="text-sm text-[#b8a8c8]">Paris & a distance</p>
-                </div>
+                {infoItems.map((item, i) => {
+                  const Icon = item.icon === "Clock" ? Clock : item.icon === "Shield" ? Shield : MapPin
+                  return (
+                    <div key={i} className="text-center">
+                      <div className="w-12 h-12 bg-[#6b4e8d]/20 rounded-xl flex items-center justify-center mx-auto mb-3">
+                        <Icon className="w-6 h-6 text-[#c9a86c]" />
+                      </div>
+                      <h4 className="font-semibold text-[#f8f5f0] mb-1">{item.title}</h4>
+                      <p className="text-sm text-[#b8a8c8]">{item.description}</p>
+                    </div>
+                  )
+                })}
               </div>
             </div>
           </div>
@@ -129,11 +122,9 @@ export function ContactSection() {
           {/* Additional info */}
           <div className="mt-8 text-center">
             <div className="inline-block bg-[#251e35] rounded-xl p-6 border border-[#c9a86c]/20">
-              <p className="text-[#f8f5f0] mb-2 font-serif text-lg">
-                Consultation <span className="text-[#c9a86c] font-semibold">discrete</span> et <span className="text-[#c9a86c] font-semibold">confidentielle</span>
-              </p>
+              <p className="text-[#f8f5f0] mb-2 font-serif text-lg" dangerouslySetInnerHTML={{ __html: t("contact.disclaimer") }} />
               <p className="text-sm text-[#b8a8c8]">
-                Reponses sinceres, sans jugement - Plus de 20 ans d&apos;experience
+                {t("contact.disclaimerSub")}
               </p>
             </div>
           </div>

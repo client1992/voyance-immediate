@@ -1,0 +1,166 @@
+{
+  "nav": {
+    "home": "Home",
+    "consultations": "Consultations",
+    "reviews": "Reviews",
+    "contact": "Contact",
+    "call": "Call",
+    "callNow": "Call Now"
+  },
+  "topbar": {
+    "call": "Call now: 0033 7 82 38 81 64",
+    "immediate": "Immediate Consultation"
+  },
+  "hero": {
+    "badge": "Trusted psychic for over 20 years",
+    "title1": "Immediate Psychic",
+    "title2": "with Cheikh",
+    "subtitle": "Authentic Moroccan Medium - Serious Eastern Divination",
+    "description": "Are you going through doubt or a blockage? I provide clear answers with seriousness and discretion. Specialist in Mektoub, work with Djinns and Kitab Shams Al-Maarif.",
+    "cta": "07 82 38 81 64",
+    "cta2": "Our Services",
+    "trustItems": ["Immediate Response", "100% Confidential", "+2000 Consultations"],
+    "domains": [
+      { "label": "Love", "sublabel": "Return of loved one" },
+      { "label": "Work", "sublabel": "Career & Projects" },
+      { "label": "Family", "sublabel": "Conflicts & Harmony" },
+      { "label": "Mektoub", "sublabel": "Your Destiny" }
+    ]
+  },
+  "services": {
+    "badge": "Consultation Types",
+    "title": "How to Consult Me?",
+    "subtitle": "Choose the consultation method that suits you best. By phone for immediate answers or by appointment for an in-depth session.",
+    "recommended": "RECOMMENDED",
+    "types": [
+      {
+        "title": "Immediate Phone Consultation",
+        "description": "Call now and get immediate answers to your questions. Available 7 days a week.",
+        "features": ["Immediate response", "No appointment needed", "Guaranteed discretion"],
+        "cta": "Call Now",
+        "highlight": true
+      },
+      {
+        "title": "Appointment Consultation",
+        "description": "Schedule your consultation at a time that suits you for an in-depth session.",
+        "features": ["Flexible schedule", "Personalized preparation", "Adapted duration"],
+        "cta": "Book Now",
+        "highlight": false
+      },
+      {
+        "title": "WhatsApp Consultation",
+        "description": "Consultation via WhatsApp for a more personal and convenient experience.",
+        "features": ["Virtual face-to-face", "Live reading", "Accessible everywhere"],
+        "cta": "WhatsApp",
+        "highlight": false
+      }
+    ],
+    "specialtiesBadge": "My Specialties",
+    "specialtiesTitle": "Divination Areas",
+    "services": [
+      {
+        "title": "Mektoub Divination",
+        "description": "Discover your written destiny. Mektoub reveals the path that life has traced for you."
+      },
+      {
+        "title": "Return of Loved One",
+        "description": "Specialist in love reconciliation. I help you find love and harmony in your relationship."
+      },
+      {
+        "title": "Work with Djinns",
+        "description": "Invocation and communication with spirits to solve your most complex problems."
+      },
+      {
+        "title": "Kitab Shams Al-Maarif",
+        "description": "Ancient secrets of the sacred book Shams Al-Maarif Al-Kubra for deep spiritual guidance."
+      }
+    ],
+    "faqTitle": "Frequently Asked Questions from My Clients",
+    "faqQuestions": [
+      "Will he/she come back?",
+      "How do I know my Mektoub?",
+      "How do I unblock my luck?",
+      "How do I know if I have the evil eye?"
+    ]
+  },
+  "about": {
+    "badge": "About",
+    "title": "Who is Cheikh?",
+    "name": "Cheikh",
+    "subtitle": "Moroccan Medium - Eastern Divination",
+    "expYears": "+20",
+    "expLabel": "years of experience",
+    "paragraph1": "I am <span class=\"text-[#c9a86c] font-semibold\">Cheikh</span>, a medium and psychic of Moroccan origin, from the <span class=\"text-[#c9a86c]\">Souss</span> region in southern Morocco. With over <span class=\"text-[#c9a86c] font-semibold\">20 years of experience</span> in divinatory arts, I put my gift at the service of those seeking answers to their deepest questions.",
+    "paragraph2": "Based in <span class=\"text-[#c9a86c]\">Paris</span>, I offer consultations both in person and remotely by phone. My approach is based on listening, respect and absolute discretion. Each consultation is unique, as each person deserves special attention.",
+    "features": [
+      { "title": "+20 years", "label": "of experience" },
+      { "title": "Paris", "label": "and remote" },
+      { "title": "Discretion", "label": "fully guaranteed" },
+      { "title": "Psychic", "label": "authentic" }
+    ],
+    "cta": "Consult Me"
+  },
+  "testimonials": {
+    "badge": "They Trust Me",
+    "title": "Client <span class=\"text-[#c9a86c]\">Reviews</span>",
+    "subtitle": "Sincere consultations, no judgment - Over 2000 people supported worldwide",
+    "verifiedReviews": "verified reviews - France, Spain, Italy, Switzerland, Kuwait, Qatar, Saudi Arabia",
+    "prevLabel": "Previous reviews",
+    "nextLabel": "Next reviews",
+    "pageLabel": "Page",
+    "trustBadges": [
+      { "value": "+2000", "label": "Consultations" },
+      { "value": "98%", "label": "Satisfaction" },
+      { "value": "+20", "label": "Years Experience" },
+      { "value": "7/7", "label": "Availability" }
+    ]
+  },
+  "contact": {
+    "badge": "Contact",
+    "title": "<span class=\"text-[#c9a86c]\">Contact</span> Me",
+    "subtitle": "Immediate consultation by phone or appointment - I answer personally",
+    "callTitle": "Call me now",
+    "callSubtitle": "I answer personally",
+    "callNow": "Call Now",
+    "infoItems": [
+      { "icon": "Clock", "title": "Availability", "description": "7 days - 9am to 9pm" },
+      { "icon": "Shield", "title": "Discretion", "description": "100% Confidential" },
+      { "icon": "MapPin", "title": "Location", "description": "Paris & remote" }
+    ],
+    "disclaimer": "Discrete and <span class=\"text-[#c9a86c] font-semibold\">confidential</span> consultation",
+    "disclaimerSub": "Honest answers, no judgment - Over 20 years of experience"
+  },
+  "footer": {
+    "brand": "Immediate Psychic",
+    "brandHighlight": "Psychic",
+    "description": "Cheikh - Trusted Moroccan Medium. Over 20 years of experience in Eastern divination. Consultations in Paris and remotely.",
+    "servicesTitle": "Services",
+    "servicesList": [
+      "Mektoub Divination",
+      "Work with Djinns",
+      "Kitab Shams Al-Maarif",
+      "Return of Loved One",
+      "Luck Unblocking",
+      "Evil Eye Protection"
+    ],
+    "contactTitle": "Contact",
+    "location": "Paris, France",
+    "copyright": "Immediate Psychic - Cheikh Moroccan Medium. All rights reserved.",
+    "availability": "Available 7 days from 9am to 9pm",
+    "seoKeywords": [
+      "Paris Psychic",
+      "Divination Cabinet",
+      "Maghreb Medium",
+      "Moroccan Psychic",
+      "Mektoub Divination",
+      "Djinns",
+      "Shams Al-Maarif"
+    ]
+  },
+  "language": {
+    "fr": "Français",
+    "en": "English",
+    "es": "Español",
+    "ar": "العربية"
+  }
+}

@@ -2,6 +2,7 @@
 
 import { Star, Quote, ChevronLeft, ChevronRight } from "lucide-react"
 import { useState } from "react"
+import { useTranslation } from "@/lib/use-translation"
 
 const testimonials = [
   // Avis francais
@@ -347,9 +348,11 @@ const testimonials = [
 ]
 
 export function TestimonialsSection() {
+  const { t, tArray } = useTranslation()
   const [currentPage, setCurrentPage] = useState(0)
   const testimonialsPerPage = 6
   const totalPages = Math.ceil(testimonials.length / testimonialsPerPage)
+  const trustBadges = tArray("testimonials.trustBadges") as { value: string; label: string }[]
   
   const currentTestimonials = testimonials.slice(
     currentPage * testimonialsPerPage,
@@ -366,29 +369,24 @@ export function TestimonialsSection() {
 
   return (
     <section id="avis" className="py-20 relative overflow-hidden">
-      {/* Background */}
       <div className="absolute inset-0 bg-gradient-to-b from-[#251e35] via-[#1a1425] to-[#251e35]" />
       <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#c9a86c]/50 to-transparent" />
       
-      {/* Decorative quotes */}
       <div className="absolute top-20 left-10 text-[150px] text-[#c9a86c]/5 font-serif leading-none">&ldquo;</div>
       <div className="absolute bottom-20 right-10 text-[150px] text-[#c9a86c]/5 font-serif leading-none rotate-180">&ldquo;</div>
 
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center mb-16">
-          <span className="inline-block text-[#6b4e8d] font-medium mb-2 uppercase tracking-wider text-sm">Ils Me Font Confiance</span>
-          <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl font-bold text-[#f8f5f0] text-balance">
-            Avis de Mes <span className="text-[#c9a86c]">Clients</span>
-          </h2>
+          <span className="inline-block text-[#6b4e8d] font-medium mb-2 uppercase tracking-wider text-sm">{t("testimonials.badge")}</span>
+          <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl font-bold text-[#f8f5f0] text-balance" dangerouslySetInnerHTML={{ __html: t("testimonials.title") }} />
           <p className="text-[#b8a8c8] max-w-2xl mx-auto mt-4">
-            Des consultations sinceres, sans jugement - Plus de 2000 personnes accompagnees dans le monde entier
+            {t("testimonials.subtitle")}
           </p>
           <p className="text-[#c9a86c] text-sm mt-2">
-            {testimonials.length} avis verifies - France, Espagne, Italie, Suisse, Koweit, Qatar, Arabie Saoudite
+            {testimonials.length} {t("testimonials.verifiedReviews")}
           </p>
         </div>
 
-        {/* Testimonials grid */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
           {currentTestimonials.map((testimonial, index) => (
             <div 
@@ -397,19 +395,16 @@ export function TestimonialsSection() {
             >
               <Quote className="absolute top-4 right-4 w-8 h-8 text-[#c9a86c]/20 group-hover:text-[#c9a86c]/40 transition-colors" />
               
-              {/* Rating */}
               <div className="flex gap-1 mb-4">
                 {[...Array(testimonial.rating)].map((_, i) => (
                   <Star key={i} className="w-4 h-4 fill-[#c9a86c] text-[#c9a86c]" />
                 ))}
               </div>
 
-              {/* Testimonial text */}
               <p className="text-[#f8f5f0]/90 leading-relaxed mb-6 italic text-sm">
                 &ldquo;{testimonial.text}&rdquo;
               </p>
 
-              {/* Author */}
               <div className="flex items-center justify-between">
                 <div className="flex items-center gap-3">
                   <div className="w-10 h-10 bg-gradient-to-br from-[#6b4e8d] to-[#4a3563] rounded-full flex items-center justify-center">
@@ -428,12 +423,11 @@ export function TestimonialsSection() {
           ))}
         </div>
 
-        {/* Pagination */}
         <div className="flex items-center justify-center gap-4 mt-10">
           <button 
             onClick={prevPage}
             className="p-3 rounded-full bg-[#3d2e5a] border border-[#c9a86c]/30 text-[#c9a86c] hover:bg-[#c9a86c] hover:text-[#1a1425] transition-all"
-            aria-label="Avis precedents"
+            aria-label={t("testimonials.prevLabel")}
           >
             <ChevronLeft className="w-5 h-5" />
           </button>
@@ -448,7 +442,7 @@ export function TestimonialsSection() {
                     ? "bg-[#c9a86c] w-8" 
                     : "bg-[#3d2e5a] hover:bg-[#c9a86c]/50"
                 }`}
-                aria-label={`Page ${i + 1}`}
+                aria-label={`${t("testimonials.pageLabel")} ${i + 1}`}
               />
             ))}
           </div>
@@ -456,31 +450,20 @@ export function TestimonialsSection() {
           <button 
             onClick={nextPage}
             className="p-3 rounded-full bg-[#3d2e5a] border border-[#c9a86c]/30 text-[#c9a86c] hover:bg-[#c9a86c] hover:text-[#1a1425] transition-all"
-            aria-label="Avis suivants"
+            aria-label={t("testimonials.nextLabel")}
           >
             <ChevronRight className="w-5 h-5" />
           </button>
         </div>
 
-        {/* Trust badges */}
         <div className="mt-16 bg-gradient-to-r from-[#3d2e5a] via-[#251e35] to-[#3d2e5a] rounded-2xl p-8 border border-[#c9a86c]/20">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-            <div className="text-center">
-              <p className="text-4xl font-serif font-bold text-[#c9a86c]">+2000</p>
-              <p className="text-sm text-[#b8a8c8] mt-1">Consultations</p>
-            </div>
-            <div className="text-center">
-              <p className="text-4xl font-serif font-bold text-[#c9a86c]">98%</p>
-              <p className="text-sm text-[#b8a8c8] mt-1">Satisfaction</p>
-            </div>
-            <div className="text-center">
-              <p className="text-4xl font-serif font-bold text-[#c9a86c]">+20</p>
-              <p className="text-sm text-[#b8a8c8] mt-1">Ans d&apos;Experience</p>
-            </div>
-            <div className="text-center">
-              <p className="text-4xl font-serif font-bold text-[#c9a86c]">7j/7</p>
-              <p className="text-sm text-[#b8a8c8] mt-1">Disponibilite</p>
-            </div>
+            {trustBadges.map((badge, i) => (
+              <div key={i} className="text-center">
+                <p className="text-4xl font-serif font-bold text-[#c9a86c]">{badge.value}</p>
+                <p className="text-sm text-[#b8a8c8] mt-1">{badge.label}</p>
+              </div>
+            ))}
           </div>
         </div>
       </div>

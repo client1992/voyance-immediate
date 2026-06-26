@@ -1,0 +1,166 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "consultations": "Consultas",
+    "reviews": "Opiniones",
+    "contact": "Contacto",
+    "call": "Llamar",
+    "callNow": "Llamar Ahora"
+  },
+  "topbar": {
+    "call": "Llame ahora: 0033 7 82 38 81 64",
+    "immediate": "Consulta Inmediata"
+  },
+  "hero": {
+    "badge": "Vidente de confianza desde hace más de 20 años",
+    "title1": "Videncia Inmediata",
+    "title2": "con Cheikh",
+    "subtitle": "Médium Marroquí Auténtico - Videncia Oriental Seria",
+    "description": "¿Estás pasando por dudas o un bloqueo? Te doy respuestas claras con seriedad y discreción. Especialista en Mektoub, trabajo con Djinns y Kitab Shams Al-Maarif.",
+    "cta": "07 82 38 81 64",
+    "cta2": "Nuestros Servicios",
+    "trustItems": ["Respuesta Inmediata", "100% Confidencial", "+2000 Consultas"],
+    "domains": [
+      { "label": "Amor", "sublabel": "Regreso del ser amado" },
+      { "label": "Trabajo", "sublabel": "Carrera y Proyectos" },
+      { "label": "Familia", "sublabel": "Conflictos y Armonía" },
+      { "label": "Mektoub", "sublabel": "Tu Destino" }
+    ]
+  },
+  "services": {
+    "badge": "Tipos de Consulta",
+    "title": "¿Cómo Consultarme?",
+    "subtitle": "Elige el método de consulta que mejor se adapte a ti. Por teléfono para respuesta inmediata o con cita previa para una sesión en profundidad.",
+    "recommended": "RECOMENDADO",
+    "types": [
+      {
+        "title": "Consulta Telefónica Inmediata",
+        "description": "Llama ahora y obtén respuestas inmediatas a tus preguntas. Disponible 7 días a la semana.",
+        "features": ["Respuesta inmediata", "Sin cita previa", "Discreción asegurada"],
+        "cta": "Llamar Ahora",
+        "highlight": true
+      },
+      {
+        "title": "Consulta con Cita Previa",
+        "description": "Programa tu consulta a la hora que te convenga para una sesión en profundidad.",
+        "features": ["Horario flexible", "Preparación personalizada", "Duración adaptada"],
+        "cta": "Pedir Cita",
+        "highlight": false
+      },
+      {
+        "title": "Consulta por WhatsApp",
+        "description": "Consulta vía WhatsApp para una experiencia más personal y práctica.",
+        "features": ["Cara a cara virtual", "Lectura en directo", "Accesible desde cualquier lugar"],
+        "cta": "WhatsApp",
+        "highlight": false
+      }
+    ],
+    "specialtiesBadge": "Mis Especialidades",
+    "specialtiesTitle": "Áreas de Videncia",
+    "services": [
+      {
+        "title": "Videncia Mektoub",
+        "description": "Descubre tu destino escrito. El Mektoub revela el camino que la vida ha trazado para ti."
+      },
+      {
+        "title": "Regreso del Ser Amado",
+        "description": "Especialista en reconciliación amorosa. Te ayudo a recuperar el amor y la armonía en tu pareja."
+      },
+      {
+        "title": "Trabajo con los Djinns",
+        "description": "Invocación y comunicación con los espíritus para resolver tus problemas más complejos."
+      },
+      {
+        "title": "Kitab Shams Al-Maarif",
+        "description": "Secretos ancestrales del libro sagrado Shams Al-Maarif Al-Kubra para una guía espiritual profunda."
+      }
+    ],
+    "faqTitle": "Preguntas Frecuentes de Mis Clientes",
+    "faqQuestions": [
+      "¿Volverá?",
+      "¿Cómo conocer mi Mektoub?",
+      "¿Cómo desbloquear mi suerte?",
+      "¿Cómo saber si tengo mal de ojo?"
+    ]
+  },
+  "about": {
+    "badge": "Sobre Mí",
+    "title": "¿Quién es Cheikh?",
+    "name": "Cheikh",
+    "subtitle": "Médium Marroquí - Videncia Oriental",
+    "expYears": "+20",
+    "expLabel": "años de experiencia",
+    "paragraph1": "Soy <span class=\"text-[#c9a86c] font-semibold\">Cheikh</span>, médium y vidente de origen marroquí, de la región del <span class=\"text-[#c9a86c]\">Souss</span>, en el sur de Marruecos. Con más de <span class=\"text-[#c9a86c] font-semibold\">20 años de experiencia</span> en las artes adivinatorias, pongo mi don al servicio de quienes buscan respuestas a sus preguntas más profundas.",
+    "paragraph2": "Establecido en <span class=\"text-[#c9a86c]\">París</span>, ofrezco consultas tanto en persona como a distancia por teléfono. Mi enfoque se basa en la escucha, el respeto y la discreción absoluta. Cada consulta es única, porque cada persona merece una atención especial.",
+    "features": [
+      { "title": "+20 años", "label": "de experiencia" },
+      { "title": "París", "label": "y a distancia" },
+      { "title": "Discreción", "label": "total garantizada" },
+      { "title": "Videncia", "label": "auténtica" }
+    ],
+    "cta": "Consultarme"
+  },
+  "testimonials": {
+    "badge": "Confían en Mí",
+    "title": "Opiniones de Mis <span class=\"text-[#c9a86c]\">Clientes</span>",
+    "subtitle": "Consultas sinceras, sin juicios - Más de 2000 personas acompañadas en todo el mundo",
+    "verifiedReviews": "opiniones verificadas - Francia, España, Italia, Suiza, Kuwait, Catar, Arabia Saudí",
+    "prevLabel": "Opiniones anteriores",
+    "nextLabel": "Opiniones siguientes",
+    "pageLabel": "Página",
+    "trustBadges": [
+      { "value": "+2000", "label": "Consultas" },
+      { "value": "98%", "label": "Satisfacción" },
+      { "value": "+20", "label": "Años Experiencia" },
+      { "value": "7/7", "label": "Disponibilidad" }
+    ]
+  },
+  "contact": {
+    "badge": "Contacto",
+    "title": "<span class=\"text-[#c9a86c]\">Contáctame</span>",
+    "subtitle": "Consulta inmediata por teléfono o con cita - Respondo personalmente",
+    "callTitle": "Llámame ahora",
+    "callSubtitle": "Respondo personalmente",
+    "callNow": "Llamar Ahora",
+    "infoItems": [
+      { "icon": "Clock", "title": "Disponibilidad", "description": "7 días - 9h a 21h" },
+      { "icon": "Shield", "title": "Discreción", "description": "100% Confidencial" },
+      { "icon": "MapPin", "title": "Ubicación", "description": "París y a distancia" }
+    ],
+    "disclaimer": "Consulta <span class=\"text-[#c9a86c] font-semibold\">discreta</span> y <span class=\"text-[#c9a86c] font-semibold\">confidencial</span>",
+    "disclaimerSub": "Respuestas sinceras, sin juicios - Más de 20 años de experiencia"
+  },
+  "footer": {
+    "brand": "Videncia Inmediata",
+    "brandHighlight": "Inmediata",
+    "description": "Cheikh - Médium Marroquí de confianza. Más de 20 años de experiencia en videncia oriental. Consultas en París y a distancia.",
+    "servicesTitle": "Servicios",
+    "servicesList": [
+      "Videncia Mektoub",
+      "Trabajo con Djinns",
+      "Kitab Shams Al-Maarif",
+      "Regreso del Ser Amado",
+      "Desbloqueo de Suerte",
+      "Protección Mal de Ojo"
+    ],
+    "contactTitle": "Contacto",
+    "location": "París, Francia",
+    "copyright": "Videncia Inmediata - Cheikh Médium Marroquí. Todos los derechos reservados.",
+    "availability": "Disponible 7 días de 9h a 21h",
+    "seoKeywords": [
+      "Vidente París",
+      "Gabinete de Videncia",
+      "Médium Magrebí",
+      "Videncia Marroquí",
+      "Videncia Mektoub",
+      "Djinns",
+      "Shams Al-Maarif"
+    ]
+  },
+  "language": {
+    "fr": "Français",
+    "en": "English",
+    "es": "Español",
+    "ar": "العربية"
+  }
+}
